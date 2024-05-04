@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: MovieStream_CAX1RR
+grpc:
+  server:
+    port: 5100
+  client:
+    MoviePiBackend:
+      address: 'static://localhost:8000'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
